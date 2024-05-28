@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to RT2_Assignment’s documentation! &mdash; RT2-1 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=eafc0fe6" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=359c27e9"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            RT2-1
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to RT2_Assignment’s documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a><ul>
+<li><a class="reference internal" href="#rt2-assignment-s-documentation">RT2_Assignment’s documentation</a></li>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li><a class="reference internal" href="#build-the-workspace">Build the workspace:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rt2-assignment-nodes">RT2_Assignment Nodes</a><ul>
+<li><a class="reference internal" href="#module-scripts.nodeA">NodeA:</a><ul>
+<li><a class="reference internal" href="#scripts.nodeA.cancel"><code class="docutils literal notranslate"><span class="pre">cancel()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.nodeA.change_target"><code class="docutils literal notranslate"><span class="pre">change_target()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.nodeA.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.nodeA.subscriber_callback"><code class="docutils literal notranslate"><span class="pre">subscriber_callback()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-scripts.nodeB">NodeB:</a><ul>
+<li><a class="reference internal" href="#scripts.nodeB.LastTargetServiceNode"><code class="docutils literal notranslate"><span class="pre">LastTargetServiceNode</span></code></a><ul>
+<li><a class="reference internal" href="#scripts.nodeB.LastTargetServiceNode.handle_get_last_target"><code class="docutils literal notranslate"><span class="pre">LastTargetServiceNode.handle_get_last_target()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.nodeB.LastTargetServiceNode.robot_target_callback"><code class="docutils literal notranslate"><span class="pre">LastTargetServiceNode.robot_target_callback()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-scripts.nodeC">NodeC:</a><ul>
+<li><a class="reference internal" href="#scripts.nodeC.DistanceToTargetServer"><code class="docutils literal notranslate"><span class="pre">DistanceToTargetServer</span></code></a><ul>
+<li><a class="reference internal" href="#scripts.nodeC.DistanceToTargetServer.handle_get_target_distance"><code class="docutils literal notranslate"><span class="pre">DistanceToTargetServer.handle_get_target_distance()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.nodeC.DistanceToTargetServer.robot_state_callback"><code class="docutils literal notranslate"><span class="pre">DistanceToTargetServer.robot_state_callback()</span></code></a></li>
+<li><a class="reference internal" href="#scripts.nodeC.DistanceToTargetServer.robot_target_callback"><code class="docutils literal notranslate"><span class="pre">DistanceToTargetServer.robot_target_callback()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#scripts.nodeC.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">RT2-1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to RT2_Assignment’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-rt2-assignment-s-documentation">
+<h1>Welcome to RT2_Assignment’s documentation!<a class="headerlink" href="#welcome-to-rt2-assignment-s-documentation" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+<section id="rt2-assignment-s-documentation">
+<h2>RT2_Assignment’s documentation<a class="headerlink" href="#rt2-assignment-s-documentation" title="Permalink to this heading"></a></h2>
+<p>This repository contains ROS (Robot Operating System) nodes and services for controlling and monitoring a robot’s movements. The system allows users to set targets for the robot, cancel ongoing actions, and obtain information about the robot’s current state, target positions, distances, and average speed.</p>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h2>
+<p>ROS installed on your system (ROS Installation Instructions)
+Catkin workspace configured</p>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p>Clone the repository into your catkin workspace:</p>
+<p>git clone <a class="reference external" href="https://github.com/OuassimMilous/RT2-1-Documentation">https://github.com/OuassimMilous/RT2-1-Documentation</a></p>
+</div></blockquote>
+</section>
+<section id="build-the-workspace">
+<h2>Build the workspace:<a class="headerlink" href="#build-the-workspace" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p>cd catkin_ws
+catkin_make
+source devel/setup.bash
+roslaunch robot_control robot_control.launch</p>
+</div></blockquote>
+</section>
+</section>
+<section id="rt2-assignment-nodes">
+<h1>RT2_Assignment Nodes<a class="headerlink" href="#rt2-assignment-nodes" title="Permalink to this heading"></a></h1>
+<section id="module-scripts.nodeA">
+<span id="nodea"></span><h2>NodeA:<a class="headerlink" href="#module-scripts.nodeA" title="Permalink to this heading"></a></h2>
+<p>Node_A UI</p>
+<p>This node waits for user input to either change the robot’s target or cancel the current action.</p>
+<span class="target" id="module-Node_A_UI"></span><p><em>Module author: Ouassim Milous</em></p>
+<dl class="simple">
+<dt>Subscribes to:</dt><dd><p>/odom</p>
+</dd>
+<dt>Publishes to:</dt><dd><p>/posvelo
+/last_target</p>
+</dd>
+<dt>Client:</dt><dd><p>/reaching_goal</p>
+</dd>
+<dt>Services:</dt><dd><p>None</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.nodeA.cancel">
+<span class="sig-prename descclassname"><span class="pre">scripts.nodeA.</span></span><span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeA.html#cancel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeA.cancel" title="Permalink to this definition"></a></dt>
+<dd><p>Cancel the current goal.</p>
+<p>This function cancels the active goal.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.nodeA.change_target">
+<span class="sig-prename descclassname"><span class="pre">scripts.nodeA.</span></span><span class="sig-name descname"><span class="pre">change_target</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeA.html#change_target"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeA.change_target" title="Permalink to this definition"></a></dt>
+<dd><p>Change the robot’s target.</p>
+<p>This function reads coordinates from the user and sets them as the new target.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.nodeA.main">
+<span class="sig-prename descclassname"><span class="pre">scripts.nodeA.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeA.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeA.main" title="Permalink to this definition"></a></dt>
+<dd><p>Main function.</p>
+<p>This function contains the main loop for the system, listening to user input to initiate changing or canceling the target.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.nodeA.subscriber_callback">
+<span class="sig-prename descclassname"><span class="pre">scripts.nodeA.</span></span><span class="sig-name descname"><span class="pre">subscriber_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeA.html#subscriber_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeA.subscriber_callback" title="Permalink to this definition"></a></dt>
+<dd><p>Callback for the subscriber.</p>
+<p>This function extracts the X and Y data from the odometry message and republishes them reformatted.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>Odometry</em>) – The odometry message containing both X and Y axis position and velocity.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-scripts.nodeB">
+<span id="nodeb"></span><h2>NodeB:<a class="headerlink" href="#module-scripts.nodeB" title="Permalink to this heading"></a></h2>
+<p>Node_B last_target_service_node</p>
+<p>This node implements a service server to provide the last set target coordinates.</p>
+<span class="target" id="module-Node_B_last_target_service_node"></span><p><em>Module author: Ouassim Milous</em></p>
+<dl class="simple">
+<dt>Subscribes to:</dt><dd><p>/last_target</p>
+</dd>
+<dt>Publishes to:</dt><dd><p>None</p>
+</dd>
+<dt>Services:</dt><dd><p>/last_target_service_node</p>
+</dd>
+<dt>Clients:</dt><dd><p>None</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="scripts.nodeB.LastTargetServiceNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scripts.nodeB.</span></span><span class="sig-name descname"><span class="pre">LastTargetServiceNode</span></span><a class="reference internal" href="_modules/scripts/nodeB.html#LastTargetServiceNode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeB.LastTargetServiceNode" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A class used to represent a LastTarget Service node.</p>
+<p>This node subscribes to the /last_target topic to get the latest robot target coordinates
+and provides a service to return these coordinates upon request.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.nodeB.LastTargetServiceNode.handle_get_last_target">
+<span class="sig-name descname"><span class="pre">handle_get_last_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeB.html#LastTargetServiceNode.handle_get_last_target"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeB.LastTargetServiceNode.handle_get_last_target" title="Permalink to this definition"></a></dt>
+<dd><p>Handle service requests and prepare the response.</p>
+<p>This method is called whenever a request is made to the ‘get_last_target’ service.
+It returns the last set target coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> – The service request.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The response containing the last target coordinates.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>LastTargetResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.nodeB.LastTargetServiceNode.robot_target_callback">
+<span class="sig-name descname"><span class="pre">robot_target_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeB.html#LastTargetServiceNode.robot_target_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeB.LastTargetServiceNode.robot_target_callback" title="Permalink to this definition"></a></dt>
+<dd><p>Callback function to update last_target when a new RobotTarget message is received.</p>
+<p>This method updates the internal last_target variable with the coordinates from the
+received RobotTarget message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>RobotTarget</em>) – The RobotTarget message containing the target coordinates.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-scripts.nodeC">
+<span id="nodec"></span><h2>NodeC:<a class="headerlink" href="#module-scripts.nodeC" title="Permalink to this heading"></a></h2>
+<p>Node_C DistanceToTargetServer</p>
+<p>This node calculates the distance to the target and the robot’s average speed.</p>
+<span class="target" id="module-Node_C_DistanceToTargetServer"></span><p><em>Module author: Ouassim Milous</em></p>
+<dl class="simple">
+<dt>Subscribes to:</dt><dd><p>/last_target
+/posvelo</p>
+</dd>
+<dt>Publishes to:</dt><dd><p>None</p>
+</dd>
+<dt>Services:</dt><dd><p>/get_target_distance</p>
+</dd>
+<dt>Clients:</dt><dd><p>None</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="scripts.nodeC.DistanceToTargetServer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scripts.nodeC.</span></span><span class="sig-name descname"><span class="pre">DistanceToTargetServer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeC.html#DistanceToTargetServer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeC.DistanceToTargetServer" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A class to represent the Distance to Target Server.</p>
+<p>This node subscribes to the /last_target and /posvelo topics to get the target and robot state information,
+and provides a service to calculate and return the distance to the target and the robot’s average speed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.nodeC.DistanceToTargetServer.handle_get_target_distance">
+<span class="sig-name descname"><span class="pre">handle_get_target_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeC.html#DistanceToTargetServer.handle_get_target_distance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeC.DistanceToTargetServer.handle_get_target_distance" title="Permalink to this definition"></a></dt>
+<dd><p>Service handler function to calculate and return the distance and average speed.</p>
+<p>This method calculates the distance to the target and the robot’s average speed, and prepares the response.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>req</strong> – The service request.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The response containing the distance to the target and average speed.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TargetDistanceResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.nodeC.DistanceToTargetServer.robot_state_callback">
+<span class="sig-name descname"><span class="pre">robot_state_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeC.html#DistanceToTargetServer.robot_state_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeC.DistanceToTargetServer.robot_state_callback" title="Permalink to this definition"></a></dt>
+<dd><p>Callback function to update the current robot state when a new Data message is received.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>Data</em>) – The Data message containing the robot’s current state.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.nodeC.DistanceToTargetServer.robot_target_callback">
+<span class="sig-name descname"><span class="pre">robot_target_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeC.html#DistanceToTargetServer.robot_target_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeC.DistanceToTargetServer.robot_target_callback" title="Permalink to this definition"></a></dt>
+<dd><p>Callback function to update the target position when a new RobotTarget message is received.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>RobotTarget</em>) – The RobotTarget message containing the target coordinates.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.nodeC.main">
+<span class="sig-prename descclassname"><span class="pre">scripts.nodeC.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/nodeC.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.nodeC.main" title="Permalink to this definition"></a></dt>
+<dd><p>Main function to instantiate the DistanceToTargetServer and keep the node running.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Ouassim Milous.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
